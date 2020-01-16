@@ -1,0 +1,14 @@
+name: "Kubectl"
+description: "Trigger kubectl actions with support for aws"
+inputs:
+  args:
+    description: "Arguments of kubectl"
+    required: true
+outputs:
+  result:
+    description: "Result of the kubectl command run"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.args }}
