@@ -1,12 +1,12 @@
-name: "Kubectl"
-description: "Trigger kubectl actions with support for aws"
+name: "Kubernetes Action"
+description: "Interacts with kubernetes clusters calling kubectl commands. Integrates support for AWS EKS."
 inputs:
   args:
     description: "Arguments of kubectl"
     required: true
 outputs:
   result:
-    description: "Result of the kubectl command run"
+    description: "Output of the kubectl command run"
 runs:
   using: "docker"
   image: "Dockerfile"

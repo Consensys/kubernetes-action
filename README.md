@@ -1,6 +1,6 @@
-k8s-gh-action
+kubernetes-action
 =============
-Runs `kubectl` with support for `AWS EKS`.
+Interacts with kubernetes clusters calling `kubectl` commands. Integrates support for **AWS EKS**.
 
 ## Usage
 
