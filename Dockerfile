@@ -1,6 +1,6 @@
 FROM alpine:3.11
 
-ARG KUBECTL_VERSION="1.14.6"
+ARG KUBECTL_VERSION="1.15.10"
 
 RUN apk add py-pip curl
 RUN pip install awscli
