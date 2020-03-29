@@ -5,9 +5,9 @@ export KUBECONFIG=kubeconfig
 command=$1
 if [[ $command == *"kubectl"* ]]; 
 then
-  result="$(kubectl $command)"
-else
   result="$($command)"
+else
+  result="$(kubectl $command)"
 fi
 status=$?
 echo ::set-output name=result::$result
