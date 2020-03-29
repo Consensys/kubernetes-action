@@ -2,7 +2,7 @@
 
 echo ${KUBE_CONFIG_DATA} | base64 -d > kubeconfig
 export KUBECONFIG=kubeconfig
-
+echo ${MANIFEST_FILE} > manifest.yaml 
 result="$(kubectl $1)"
 status=$?
 echo ::set-output name=result::$result
