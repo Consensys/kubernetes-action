@@ -65,7 +65,7 @@ One or more **secrets** needs to be created to store cluster credentials. (see [
 
 ##### Example
 ```bash
-cat ~/.kube/config | base64 | pbcopy # pbcopy will copy the secret to the clipboard (Mac OSX only)
+kubectl config view --flatten=true | base64 | pbcopy # pbcopy will copy the secret to the clipboard (Mac OSX only)
 ```
 
 #### EKS
