@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:latest
 
 ARG KUBECTL_VERSION="1.15.10"
 
