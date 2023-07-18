@@ -1,4 +1,4 @@
-name: "Kubernetes Action"
+name: "Kubernetes Action with Python 2.x fixes"
 description: "Interacts with kubernetes clusters calling kubectl commands. Integrates support for AWS EKS."
 branding:
   icon: 'anchor'  
