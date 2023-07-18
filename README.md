@@ -1,4 +1,4 @@
-kubernetes-action
+kubernetes-action : Fix for the recent change in awscli package that removes support for Python 2.7 
 =============
 Interacts with kubernetes clusters calling `kubectl` commands. Integrates support for **AWS EKS**.
 
