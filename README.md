@@ -2,7 +2,18 @@ kubernetes-action : Fix for the recent change in awscli package that removes sup
 =============
 Interacts with kubernetes clusters calling `kubectl` commands. Integrates support for **AWS EKS**.
 
-## Kubectl version = v1.27.1
+### Kubectl version = v1.27.1
+
+If you are getting the below issue - 
+```
+error: exec plugin: invalid apiVersion "client.authentication.k8s.io/v1alpha1"
+```
+Update that line/value in your .kube/config file to this - 
+```
+client.authentication.k8s.io/v1beta1
+```
+
+Then base64 encode it again and update your secret in GitHub. 
 
 ## Usage
 
